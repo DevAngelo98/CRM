@@ -10,7 +10,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-// ORDINI
 Route::group(['middleware' => 'auth'], function () {
     // ORDERS
     Route::get('/orders', 'OrdersController@index')->name('orders.index');
