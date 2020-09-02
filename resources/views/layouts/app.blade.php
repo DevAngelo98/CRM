@@ -15,7 +15,8 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
@@ -37,7 +38,7 @@
                             <a class="nav-link" href="{{ route('customers.index') }}">Customers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Orders</a>
+                            <a class="nav-link" href="{{ route('orders.index') }}">Orders</a>
                         </li>
                     </ul>
 
