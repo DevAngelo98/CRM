@@ -52,7 +52,7 @@
               onclick="event.preventDefault(); document.getElementById('delete-order-{{ $order->id }}-form').click();">[Delete]</a>
           </td>
           <td style="display: none;">
-            <form action="{{ route('order.delete', $order->id) }}" method="POST">
+            <form action="{{ route('order.delete', $order) }}" method="POST">
               @method('DELETE')
               @csrf
               <button type="submit" id="delete-order-{{ $order->id }}-form">Delete</button>
